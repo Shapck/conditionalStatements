@@ -53,11 +53,9 @@ public class Main {
         else if(age < 30 && age >= 23 && salary > 80_000){
             creaditRate -= 0.002;
         }
-        System.out.println(creaditRate);
+
         double sumWithPersent = wantedSum * creaditRate + wantedSum;
-        System.out.println(sumWithPersent);
         sumWithPersent /= 12;
-        System.out.println(sumWithPersent);
 
         if(sumWithPersent > 0.5 * salary){
             System.out.println("Максимальный платеж при ЗП "+salary+ " равен:"+0.5*salary+" рублей. Платеж по кредиту: "+sumWithPersent+" рублей.Отказано.");
